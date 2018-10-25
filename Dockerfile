@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get i
  #exploitdb \
  #exploitdb-bin-sploits \
  git \
- kali-linux-top10
+ kali-linux-top10 \
  #gdb \
  #gobuster \
  #hashcat \
