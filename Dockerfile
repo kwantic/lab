@@ -6,7 +6,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get i
  #exploitdb \
  #exploitdb-bin-sploits \
  git \
- kali-linux-top10 \
+ kali-linux-top10 
  #gdb \
  #gobuster \
  #hashcat \
@@ -18,7 +18,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get i
  #sqlmap \
  #sslscan \
  #wordlists
- && apt clean \
+ #&& apt clean \
 
 # Create known_hosts for git cloning
 #RUN touch /root/.ssh/known_hosts
@@ -38,7 +38,7 @@ RUN git clone https://github.com/Gallopsled/pwntools.git /opt/pwntools
 ENV PATH=$PATH:/opt/powersploit
 
 # Set entrypoint and working directory
-#WORKDIR /root/
+WORKDIR /root/
 
 # Indicate we want to expose ports 80 and 443
 EXPOSE 80/tcp 443/tcp
