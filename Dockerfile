@@ -29,7 +29,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get i
 # Clone git repos
 RUN git clone https://github.com/danielmiessler/SecLists.git /opt/seclists
 RUN git clone https://github.com/PowerShellMafia/PowerSploit.git /opt/powersploit
-RUN git clone https://github.com/Gallopsled/pwntools.git
+RUN git clone https://github.com/Gallopsled/pwntools.git /opt/pwntools
 
 # Other installs
 #RUN pip install pwntools
